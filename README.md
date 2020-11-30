@@ -1,3 +1,17 @@
+#!/bin/bash
+
+rm demo.html CONTRIBUTING.md .npmignore package.json package-lock.json gulpfile.js
+
+cat ../reveal.js-template/README-md-preffix.md README.md > README-new.md
+mv README-new.md README.md
+rm -rf test examples dist/theme/fonts css
+#!/bin/bash
+
+rm demo.html CONTRIBUTING.md .npmignore package.json package-lock.json gulpfile.js
+
+cat ../reveal.js-template/README-md-preffix.md README.md > README-new.md
+mv README-new.md README.md
+rm -rf test examples dist/theme/fonts css
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text.svg" alt="reveal.js" width="450">
