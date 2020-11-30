@@ -7,6 +7,7 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
+                <link rel="stylesheet" href="css/extra.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
 
@@ -30,10 +31,14 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
-
+			  hash: true,
+                          width: '95%',
+                          controls: true,
+                          progress: true,
+                          history: true,
+                          autoPlayMedia: true,
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			  plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
 	</body>
