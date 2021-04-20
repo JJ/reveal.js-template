@@ -2,8 +2,8 @@
 
 rm demo.html CONTRIBUTING.md .npmignore package.json package-lock.json gulpfile.js
 
-cat ../reveal.js-template/README-md-preffix.md README.md > README-new.md
+cp ../reveal.js-template/README.md .
 mv README-new.md README.md
 cp -r ../reveal.js-template/utils .
-cp ../reveal.js-template/extra.css dist
+cp ../reveal.js-template/dist/extra.css dist
 rm -rf test examples dist/theme/fonts css
